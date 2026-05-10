@@ -1,0 +1,14 @@
+2) We want to add a new function called "getBiggestChange" to the StockCollection class. This function calculates and returns the largest change in stock price between any two consecutive days in the price records of a stock along with the dates of the change in a list. For example, let's consider the following price records of a stock:
+
+Price Records:
+Price:  110         112         90          105
+Date:   2023-06-29  2023-07-01  2023-06-25  2023-07-06
+
+Stock price changes (sorted based on date):
+Date:     2023-06-25  ->  2023-06-29  ->  2023-07-01 ->  2023-07-06
+Price:        90      ->      110     ->     112     ->     105
+Change:              +20              +2             -7
+
+In this case, the biggest change in the stock price was +20, which occurred between 2023-06-25 and 2023-06-29. In this case, the function should return [20, "2023-06-25", "2023-06-29"]
+
+Two days are considered consecutive if there are no other days' data in between them in the price records based on their dates.
